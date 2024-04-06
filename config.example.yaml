@@ -1,0 +1,36 @@
+app:
+  env: 'local'
+  port: 8080
+  app_name: 'gin-skeleton'
+  app_url: 'http://localhost'
+
+log:
+  level: 'info'
+  root_dir: './storage/logs'
+  filename: 'app.log'
+  format: ''
+  show_line: true
+  max_backups: 3
+  max_size: 500
+  max_age: 28
+  compress: true
+
+database:
+  driver: 'mysql'
+  host: '127.0.0.1'
+  port: 3306
+  database: 'gin_skeleton'
+  username: 'root'
+  password: '123456'
+  charset: 'utf8mb4'
+  max_idle_conns: 10
+  max_open_conns: 100
+  log_mode: 'info'
+  enable_file_log_writer: true
+  log_filename: 'sql.log'
+
+redis:
+  host: '127.0.0.1'
+  port: 6379
+  db: 0
+  password: ""
